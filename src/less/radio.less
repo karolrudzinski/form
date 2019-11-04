@@ -1,0 +1,81 @@
+.radioRow {
+  display: flex;
+  margin: 20px 0 0 0;
+  justify-content: space-between;
+}
+
+.radioRowWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .radioWrap {
+    margin: 0 auto;
+    input:checked + label:before,
+    input:not(:checked) + label:before {
+      content: "";
+      margin: 0 auto;
+    }
+  }
+  .emoteDesc {
+    margin: 10px auto 0 auto;
+  }
+}
+
+.radioWrap {
+  margin: 0 50px 0 0;
+  input:checked,
+  input:not(:checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  input:checked + label,
+  input:not(:checked) + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  input:checked + label:before,
+  input:not(:checked) + label:before {
+    content: "";
+    margin: 0 15px 0 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    background: #fff;
+  }
+  input:checked + label:after,
+  input:not(:checked) + label:after {
+    content: "";
+    height: 18px;
+    width: 18px;
+    box-shadow: 0 2px 5px 0 rgba(48, 87, 7, 0.12);
+    background-color: #7ed321;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  input:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.radioContainer {
+  margin: 20px 0 0 0;
+}
+
+.radioItem {
+  // margin: 0 0 25px 0;
+  display: block;
+}

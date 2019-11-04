@@ -1,0 +1,51 @@
+.styledCheckbox {
+  position: absolute;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  & + label:before {
+    content: "";
+    margin: 0 15px 0 0;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    box-sizing: border-box;
+  }
+
+  &:focus + label:before {
+    // box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  &:checked + label:before {
+    background-image: url(/images/check.png);
+    background-size: cover;
+    background-position: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(48, 87, 7, 0.12);
+    border: none;
+  }
+
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+}
+
+.checkboxWrap {
+  margin: 20px 0 0 0;
+}

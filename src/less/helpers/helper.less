@@ -1,0 +1,73 @@
+.floatLeft {
+  float: left !important;
+}
+.floatRight {
+  float: right !important;
+}
+.floatNone {
+  float: none !important;
+}
+
+.overflowHidden {
+  overflow: hidden !important;
+}
+.overflowVisible {
+  overflow: visible !important;
+}
+
+.positionStatic {
+  position: static !important;
+}
+.positionRelative {
+  position: relative !important;
+}
+.positionAbsolute {
+  position: absolute !important;
+}
+.positionFixed {
+  position: fixed !important;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+.displayBlock {
+  display: block;
+}
+.displayInline {
+  display: inline;
+}
+// .displayNone,
+// .hide,
+// .hidden {
+//   display: none;
+// }
+
+.centerBlock {
+  margin: 0 auto;
+}
+
+.textItalic {
+  font-style: italic;
+}
+
+.clear {
+  clear: both;
+}
+br.clear {
+  font-size: 0;
+  display: block;
+  height: 0;
+}
+
+.clearFix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

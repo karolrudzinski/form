@@ -1,0 +1,95 @@
+.emoteWrap {
+  position: relative;
+  width: 100%;
+  max-width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .smiley-1 {
+    background-image: url(/images/smileys/rank1.png);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  input[type="radio"] + label {
+    background-image: url(/images/smileys/rank1.png);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  input[type="radio"]:checked + label {
+    background-image: url(/images/smileys/rank1s.png);
+  }
+}
+
+.emoteContainer {
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.emoteDesc {
+  margin: 15px auto 0 auto;
+  color: rgba(49, 62, 111, 0.5);
+  font-style: italic;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.emoteInput {
+  width: 42px;
+  height: 42px;
+  position: relative;
+}
+
+.emoteMask-1 {
+  background-image: url(../images/smileys/rank1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.input_hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+#sites label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.emoteInput:checked + img {
+  outline: 2px solid #f00;
+}
+
+.emoteInput-1 {
+}
+
+.emoteInput-2 {
+  background: url(/src/images/smileys/rank2.png);
+}
+
+.emoteInput-3 {
+  background: url(/src/images/smileys/rank3.png);
+}
+
+.emoteInput-4 {
+  background: url(/src/images/smileys/rank4.png);
+}
+
+.emoteInput-5 {
+  background: url(/src/images/smileys/rank5.png);
+}

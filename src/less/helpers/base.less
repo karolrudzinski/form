@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+pre,
+cite,
+code,
+kbd,
+samp {
+  font-family: "Andale Mono", "Courier New", Courier, monospace;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #888;
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+ol {
+  list-style: decimal;
+}
+ul {
+  list-style: disc;
+}
+ul ul {
+  list-style: circle;
+}
+ul,
+ol,
+dd {
+  padding-left: 2.5em;
+}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote {
+  padding-left: 1.25em;
+}
+blockquote,
+q {
+  quotes: none;
+  font-style: italic;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+p,
+pre {
+  margin: 0;
+}
+
+a:focus {
+  outline: none;
+}
+
+ul,
+ol,
+dl,
+hr,
+blockquote,
+code {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+ul ul,
+ul ol,
+ul dl,
+ol ol,
+ol ul,
+ol dl,
+dl dl,
+dl ul,
+dl ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1,
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.31em;
+}
+h4 {
+  font-size: 1.13em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ins {
+  text-decoration: none;
+  background-color: #ff9;
+  color: #000;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+}
+
+table.pretty {
+  td,
+  th {
+    border: 1px solid #ccc;
+  }
+  td,
+  th,
+  caption {
+    padding: 0.25em 0.5em;
+  }
+  th {
+    background-color: #c2d3d2;
+    text-align: left;
+    font-weight: 400;
+  }
+  tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  tfoot {
+    font-style: italic;
+  }
+}
+
+textarea {
+  font-family: inherit;
+}
+input,
+button,
+select {
+  vertical-align: baseline;
+  font-family: inherit;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+fieldset {
+  padding: 0.5em 1em;
+  margin-bottom: 1.5em;
+  border: 1px solid #888;
+}
+
+iframe {
+  border: 0;
+}
